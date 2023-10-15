@@ -1,0 +1,54 @@
+@import url(carrousel.css);
+
+/* Mobile first - Padrões para o perfil mobile*/
+#profile {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Links para midias sociais */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social .svg {
+  fill: var(--text-color);
+  width: 4rem;
+  margin: 20px 0px;
+}
+
+.social .svg:hover {
+  fill: var(--highlight-color);
+  stroke: var(--highlight-color);
+}
+
+/* Avatar */
+.avatar {
+  margin: 24px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  background: var(--highlight-color);
+}
+
+/* Apresentacao */
+.about .name {
+  margin: 24px;
+  font-size: 4rem;
+}
+
+.about .subtext {
+  margin: 24px;
+  color: var(--subtext-color);
+  font-size: 2rem;
+}

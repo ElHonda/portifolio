@@ -1,0 +1,79 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; /* Para garantir que a navbar esteja acima de outros elementos */
+}
+
+
+.menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 150px;
+}
+
+
+.menu li {
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.menu li:hover{
+    background-color: var(--highlight-color);
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#menu-toggle{
+    visibility: hidden;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+    cursor: pointer;
+}
+
+
+/* Ocultar o ícone do menu em telas maiores */
+@media (min-width: 769px) {
+    .menu {
+        list-style: none;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        right: auto;
+        top: auto;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu li {
+        margin: 0;
+        border-radius: 10px;
+    }
+}

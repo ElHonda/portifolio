@@ -1,0 +1,35 @@
+@import url(reset.css);
+@import url(navbar.css);
+@import url(profile.css);
+
+html{
+  font-size: 12px;
+}
+
+body {
+  background-color: var(--base-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 70px;
+  scrollbar-width: thin; /* Largura da barra de rolagem (thin, auto, etc.) */
+}
+
+#exp{
+  height: 2000px;
+  background-color: var(--third-color);
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--highlight-color); /* Cor do polegar da barra de rolagem */
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--base-color); /* Cor da área de trilha da barra de rolagem */
+  cursor: pointer;
+}
