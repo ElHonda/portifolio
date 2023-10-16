@@ -1,9 +1,13 @@
 @import url(reset.css);
 @import url(navbar.css);
+@import url(home.css);
 @import url(profile.css);
+@import url(skills.css);
 
-html{
+html {
   font-size: 12px;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
@@ -11,25 +15,58 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding-top: 70px;
-  scrollbar-width: thin; /* Largura da barra de rolagem (thin, auto, etc.) */
+  scrollbar-width: thin;
+  /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
-#exp{
+#exp {
   height: 2000px;
   background-color: var(--third-color);
 }
 
 body::-webkit-scrollbar {
-  width: 10px; /* Largura da barra de rolagem */
+  width: 10px;
+  /* Largura da barra de rolagem */
   cursor: pointer;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--highlight-color); /* Cor do polegar da barra de rolagem */
+  background-color: var(--highlight-color);
+  /* Cor do polegar da barra de rolagem */
   cursor: pointer;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--base-color); /* Cor da área de trilha da barra de rolagem */
+  background-color: var(--base-color);
+  /* Cor da área de trilha da barra de rolagem */
   cursor: pointer;
+}
+
+/* Construção base dos cards */
+.card {
+  background-color: var(--base-color);
+  border: 1px solid var(--highlight-color);
+  border-style: double;
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card p {
+  height: 30px;
+}
+
+.card .svg {
+  fill: var(--text-color);
+  padding: 10px 0px;
+}
+
+.card .svg.stroke {
+  stroke: var(--text-color);
 }

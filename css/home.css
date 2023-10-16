@@ -1,0 +1,39 @@
+#home {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Links para midias sociais */
+#home .social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#home .social .svg {
+  fill: var(--text-color);
+  width: 4rem;
+  margin: 20px 0px;
+}
+
+#home .social .svg:hover {
+  fill: var(--highlight-color);
+  stroke: var(--highlight-color);
+}
+
+/* Avatar */
+#home .avatar {
+  margin: 24px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#home .avatar img {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  background: var(--highlight-color);
+}
