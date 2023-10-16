@@ -8,66 +8,53 @@
 }
 
 .hidden {
-    visibility: hidden;
-    display: none;
+  visibility: hidden;
+  display: none;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 20px;
-    margin: 20px;
+.carousel .cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  margin: 20px;
 }
 
 /* Personalizar a barra de rolagem no WebKit (Chrome, Safari) */
-.cards {
-  scrollbar-width: thin; /* Largura da barra de rolagem (thin, auto, etc.) */
+.carousel .cards {
+  scrollbar-width: thin;
+  /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
-.cards::-webkit-scrollbar {
-  width: 10px; /* Largura da barra de rolagem */
+.carousel .cards::-webkit-scrollbar {
+  width: 10px;
+  /* Largura da barra de rolagem */
 }
 
-.cards::-webkit-scrollbar-thumb {
-  background-color: var(--highlight-color); /* Cor do polegar da barra de rolagem */
+.carousel .cards::-webkit-scrollbar-thumb {
+  background-color: var(--highlight-color);
+  /* Cor do polegar da barra de rolagem */
 }
 
-.cards::-webkit-scrollbar-track {
-  background-color: var(--base-color); /* Cor da área de trilha da barra de rolagem */
+.carousel .cards::-webkit-scrollbar-track {
+  background-color: var(--base-color);
+  /* Cor da área de trilha da barra de rolagem */
 }
 
-.cards label {
-    background-color: var(--base-color);
-    border: 1px solid var(--highlight-color);
-    border-style: double;
-    padding: 20px;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.carousel .cards .card {
+  width: 250px;
+  height: 200px;
 }
 
-.card p {
-  height: 30px;
-}
-
-.card .svg {
-  fill: var(--text-color);
+.carousel .cards .card .svg {
   width: 200px;
   height: 200px;
-  padding: 10px 0px;
-}
-
-.card .svg.stroke{
-stroke: var(--text-color);
 }
 
 .slides {
-    display: flex;
-    align-items: center;
-    overflow: auto;
+  display: flex;
+  align-items: center;
+  overflow: auto;
 }
 
 .slide {
@@ -76,13 +63,13 @@ stroke: var(--text-color);
   padding: 20px;
 }
 
-.slide .title{
+.slide .title {
   font-size: 2rem;
   color: var(--text-color);
   word-wrap: break-word;
 }
 
-.slide .description{
+.slide .description {
   margin: 10px 0;
   font-size: 1.5rem;
   color: var(--subtext-color);
@@ -90,21 +77,13 @@ stroke: var(--text-color);
   width: calc(100% - 40px);
 }
 
-.slide .description span{
+.slide .description span {
   font-weight: bold;
 }
 
 .slide .description li,
-.slide .description ul{
+.slide .description ul {
   word-wrap: break-word;
-}
-
-.card {
-    width: 250px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Mostrar o slide selecionado */
@@ -115,7 +94,7 @@ input#slide4:checked~.slides #text4,
 input#slide5:checked~.slides #text5,
 input#slide6:checked~.slides #text6,
 input#slide7:checked~.slides #text7 {
-    display: block;
+  display: block;
 }
 
 /* Mostrar o slide selecionado */
@@ -126,19 +105,19 @@ input#slide4:checked~.cards #label4,
 input#slide5:checked~.cards #label5,
 input#slide6:checked~.cards #label6,
 input#slide7:checked~.cards #label7 {
-    background-color: var(--highlight-color);
+  background-color: var(--highlight-color);
 }
 
 input[type="radio"]:checked~.slides .slide {
-    display: none;
+  display: none;
 }
 
 /* Ocultar o ícone do menu em telas maiores */
 @media (min-width: 769px) {
-    .cards {
-        padding-left: 0;
-        /* Adicione algum espaço à esquerda para evitar o corte do primeiro cartão */
-        padding-right: 0;
-    }
-    
+  .cards {
+    padding-left: 0;
+    /* Adicione algum espaço à esquerda para evitar o corte do primeiro cartão */
+    padding-right: 0;
+  }
+
 }

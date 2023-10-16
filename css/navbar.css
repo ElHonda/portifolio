@@ -10,7 +10,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 1000; /* Para garantir que a navbar esteja acima de outros elementos */
+    z-index: 1000;
+    /* Para garantir que a navbar esteja acima de outros elementos */
 }
 
 
@@ -28,7 +29,10 @@ nav {
     position: absolute;
     top: 70px;
     right: 0px;
-    width: 150px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    user-select: none;
 }
 
 
@@ -37,7 +41,7 @@ nav {
     border-radius: 0px;
 }
 
-.menu li:hover{
+.menu li:hover {
     background-color: var(--highlight-color);
 }
 
@@ -46,11 +50,11 @@ nav {
     color: var(--text-color);
 }
 
-#menu-toggle{
+#menu-toggle {
     visibility: hidden;
 }
 
-#menu-toggle:checked + .menu-icon + .menu {
+#menu-toggle:checked+.menu-icon+.menu {
     display: flex;
     cursor: pointer;
 }
