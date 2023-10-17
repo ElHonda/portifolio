@@ -46,6 +46,10 @@
   height: 200px;
 }
 
+.carousel .cards .card:hover{
+  background-color: var(--base-highlight-color);
+}
+
 .carousel .cards .card .svg {
   width: 200px;
   height: 200px;

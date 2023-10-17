@@ -1,0 +1,90 @@
+#career {
+  background-color: var(--base-color);
+  border-style: double;
+  border: 1px solid var(--highlight-color);
+  margin: 20px 20px;
+}
+
+#career .title {
+  font-size: 2rem;
+  color: var(--text-color);
+  word-wrap: break-word;
+  margin: 20px;
+}
+
+#career .cards {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color);
+  overflow-x: auto;
+  gap: 20px;
+  margin: 20px;
+}
+
+#career .cards .card {
+  width: 330px;
+  height: 150px;
+  min-width: 330px;
+  min-height: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#career .cards .card .card-title{
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+#career .cards .card .card-description{
+  font-size: 1.2rem;
+  color: var(--subtext-color);
+  text-align: start;
+}
+
+#career .cards .card .card-footer{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: end;
+  align-self: flex-end;
+}
+
+#career .cards .card:hover{
+  background-color: var(--highlight-color);
+}
+
+#career .cards .card:hover .card-description {
+  color: var(--highlight-text-color) !important;
+}
+
+#career .cards .card .svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* Personalizar a barra de rolagem no WebKit (Chrome, Safari) */
+#career .cards {
+  scrollbar-width: thin;
+  /* Largura da barra de rolagem (thin, auto, etc.) */
+}
+
+#career .cards::-webkit-scrollbar {
+  width: 10px;
+  /* Largura da barra de rolagem */
+}
+
+#career .cards::-webkit-scrollbar-thumb {
+  background-color: var(--highlight-color);
+  /* Cor do polegar da barra de rolagem */
+}
+
+#career .cards::-webkit-scrollbar-track {
+  background-color: var(--base-color);
+  /* Cor da área de trilha da barra de rolagem */
+}
+

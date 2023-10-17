@@ -21,7 +21,6 @@
 
 #home .social .svg:hover {
   fill: var(--highlight-color);
-  stroke: var(--highlight-color);
 }
 
 /* Avatar */
@@ -36,4 +35,8 @@
   height: 260px;
   border-radius: 100%;
   background: var(--highlight-color);
+}
+
+#home .avatar img:hover{
+  background-color: var(--base-highlight-color);
 }

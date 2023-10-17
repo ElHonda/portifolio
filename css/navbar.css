@@ -11,7 +11,6 @@ nav {
     align-items: center;
     padding: 10px 20px;
     z-index: 1000;
-    /* Para garantir que a navbar esteja acima de outros elementos */
 }
 
 
@@ -23,6 +22,7 @@ nav {
 }
 
 .menu {
+    font-size: 1.5rem;
     display: none;
     flex-direction: column;
     background-color: var(--base-highlight-color);
