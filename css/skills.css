@@ -1,3 +1,4 @@
+/* Estilização para seção */
 #skills{
   background-color: var(--base-color);
   border-style: double;
@@ -5,10 +6,12 @@
   margin: 0px 20px;
 }
 
+/* Altera tamanho da fonte pra seção */
 #skills p {
   font-size: 1.3rem;
 }
 
+/* Estiliza a div que contém os cards */
 #skills .cards {
   display: flex;
   flex-direction: row;
@@ -18,6 +21,7 @@
   margin: 20px;
 }
 
+/* Define tamanho e exibição de cada card na lista */
 #skills .cards .card {
   width: 100px;
   height: 100px;
@@ -25,34 +29,34 @@
   min-width: 100px;
 }
 
+/* COmportamento quando mouse estiver sobre o card */
 #skills .cards .card:hover{
   background-color: var(--highlight-color);
 }
 
+/* Define o tamanho do svg exibido */
 #skills .cards .card .svg {
   width: 50px;
   height: 50px;
 }
 
-/* Personalizar a barra de rolagem no WebKit (Chrome, Safari) */
+/* Personaliza a barra de rolagem no WebKit (Chrome, Safari) */
 #skills .cards {
   scrollbar-width: thin;
-  /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
+/* Largura da barra de rolagem */
 #skills .cards::-webkit-scrollbar {
   width: 10px;
-  /* Largura da barra de rolagem */
 }
 
 #skills .cards::-webkit-scrollbar-thumb {
   background-color: var(--highlight-color);
-  /* Cor do polegar da barra de rolagem */
 }
 
+/* Cor da área do trilho da barra de rolagem */
 #skills .cards::-webkit-scrollbar-track {
   background-color: var(--base-color);
-  /* Cor da área de trilha da barra de rolagem */
 }
 
 #skills .title {

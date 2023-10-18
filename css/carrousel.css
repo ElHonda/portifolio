@@ -7,11 +7,13 @@
   margin: 20px;
 }
 
+/* Classe para esconder elementos da tela */
 .hidden {
   visibility: hidden;
   display: none;
 }
 
+/* Define estilo padrão do card */
 .carousel .cards {
   display: flex;
   flex-direction: row;
@@ -20,62 +22,75 @@
   margin: 20px;
 }
 
-/* Personalizar a barra de rolagem no WebKit (Chrome, Safari) */
+/* Personaliza a barra de rolagem no WebKit (Chrome, Safari) */
 .carousel .cards {
   scrollbar-width: thin;
-  /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
+/* Largura da barra de rolagem */
 .carousel .cards::-webkit-scrollbar,
 .carousel .slides::-webkit-scrollbar {
   width: 10px;
-  /* Largura da barra de rolagem */
 }
 
+/* Cor do polegar da barra de rolagem */
 .carousel .cards::-webkit-scrollbar-thumb,
 .carousel .slides::-webkit-scrollbar-thumb{
   background-color: var(--highlight-color);
-  /* Cor do polegar da barra de rolagem */
 }
 
 .carousel .cards::-webkit-scrollbar-track,
 .carousel .slides::-webkit-scrollbar-track {
   background-color: var(--base-color);
-  /* Cor da área de trilha da barra de rolagem */
+
 }
 
+/* Define tamanho padrão dos cards do carrosel */
 .carousel .cards .card {
   width: 250px;
   height: 200px;
 }
 
+/* Cor do card quando mouse posicionado em cima */
 .carousel .cards .card:hover{
   background-color: var(--base-highlight-color);
 }
 
+/* Tamanho da imagem do card no carrosel */
 .carousel .cards .card .svg {
   width: 200px;
   height: 200px;
 }
 
+/* Estilos padrões para a div com os slides */
 .slides {
   display: flex;
   align-items: center;
   overflow: auto;
 }
 
+
+/* Animação de transição para alteração do slide ser mais suave */
 .slide {
   transform: translateX(0%);
   transition: transform 0.3s ease;
   padding: 20px;
 }
 
-.slide .title {
+/* Comportamento padrão do titulo do slide e carrosel */
+.slide .title,
+.carousel .title {
   font-size: 2rem;
   color: var(--text-color);
   word-wrap: break-word;
 }
 
+/* Define margem para o titulo do carrosel */
+.carousel > .title{
+  margin: 20px;
+}
+
+/* Aplica estilos no texto de descrição dos slides  */
 .slide .description {
   margin: 10px 0;
   font-size: 1.5rem;
@@ -93,7 +108,7 @@
   word-wrap: break-word;
 }
 
-/* Mostrar o slide selecionado */
+/* Define comportamento para o slide selecionado */
 input#slide1:checked~.slides #text1,
 input#slide2:checked~.slides #text2,
 input#slide3:checked~.slides #text3,
@@ -104,7 +119,7 @@ input#slide7:checked~.slides #text7 {
   display: block;
 }
 
-/* Mostrar o slide selecionado */
+/* Altera a cor do slide selecionado */
 input#slide1:checked~.cards #label1,
 input#slide2:checked~.cards #label2,
 input#slide3:checked~.cards #label3,
@@ -115,6 +130,7 @@ input#slide7:checked~.cards #label7 {
   background-color: var(--highlight-color);
 }
 
+/* Não exibe os radios, serão utilizados os labels para marcar/desmarcar */
 input[type="radio"]:checked~.slides .slide {
   display: none;
 }
@@ -123,8 +139,6 @@ input[type="radio"]:checked~.slides .slide {
 @media (min-width: 769px) {
   .cards {
     padding-left: 0;
-    /* Adicione algum espaço à esquerda para evitar o corte do primeiro cartão */
     padding-right: 0;
   }
-
 }

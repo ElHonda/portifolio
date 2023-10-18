@@ -1,3 +1,4 @@
+/* Estilização para seção */
 #home {
   background-color: var(--base-color);
   color: var(--text-color);
@@ -13,23 +14,26 @@
   gap: 40px;
 }
 
+/* Configuração do SVG apresentado */
 #home .social .svg {
   fill: var(--text-color);
   width: 4rem;
   margin: 20px 0px;
 }
 
+/* Altera a cor base do svg quando mouse posicionado em cima */
 #home .social .svg:hover {
   fill: var(--highlight-color);
 }
 
-/* Avatar */
+/* Configurações de exibição do avatar */
 #home .avatar {
   margin: 24px 40px;
   display: flex;
   justify-content: center;
 }
 
+/* Define como será exibida a imagem */
 #home .avatar img {
   width: 260px;
   height: 260px;
@@ -37,6 +41,7 @@
   background: var(--highlight-color);
 }
 
+/* Comportamento quando mouse estiver sobre a imagem */
 #home .avatar img:hover{
   background-color: var(--base-highlight-color);
 }

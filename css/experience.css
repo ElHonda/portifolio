@@ -1,5 +1,5 @@
-/* Mobile first - Padrões para o perfil mobile*/
-#profile {
+/* Estilização da seção */
+#experience {
   background-color: var(--base-color);
   color: var(--text-color);
   display: flex;
@@ -7,12 +7,13 @@
   flex-direction: column;
 }
 
-/* Apresentacao */
+/* Estilo de apresentação do nome */
 .about .name {
   margin: 24px;
   font-size: 4rem;
 }
 
+/* Estilo de apresentação dos subtitulos */
 .about .subtext {
   margin: 24px;
   color: var(--subtext-color);

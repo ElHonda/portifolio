@@ -1,3 +1,4 @@
+/* Estilização para a seção */
 #contact {
     background-color: var(--base-color);
     color: var(--text-color);
@@ -10,11 +11,13 @@
     padding: 20px;
 }
 
+/* Estiliza o h2 na seção */
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
+/* Adiciona flexbox no form para componente ficarem alinhados */
 #contact form {
     display: flex;
     flex-direction: column;
@@ -22,14 +25,17 @@
     width: 100%;
 }
 
+/* Define margem inferior para os input-group's */
 #contact form .input-group {
     margin-bottom: 10px;
 }
 
+/* Define font bold para label do contato */
 #contact form .input-group label {
     font-weight: bold;
 }
 
+/* Configuração padrão para os inputs e textarea do form */
 #contact form .input-group input,
 #contact form .input-group textarea {
     width: calc(100% - 21px);
@@ -38,6 +44,7 @@
     border-radius: 5px;
 }
 
+/* Estilização do botão do form */
 #contact form button {
     background-color: var(--base-highlight-color);
     color: var(--text-color);
@@ -48,6 +55,7 @@
     font-weight: bold;
 }
 
+/* Define comportamento para botão mudar de cor quando mouse posicionado em cima */
 #contact form button:hover {
     background-color: var(--highlight-color);
     color: var(--highlight-text-color);

@@ -1,3 +1,4 @@
+/* Estilização para seção */
 #career {
   background-color: var(--base-color);
   border-style: double;
@@ -5,6 +6,7 @@
   margin: 20px 20px;
 }
 
+/* Estiliza a class title da seção */
 #career .title {
   font-size: 2rem;
   color: var(--text-color);
@@ -12,6 +14,7 @@
   margin: 20px;
 }
 
+/* Estiliza a div que contém os cards */
 #career .cards {
   display: flex;
   flex-direction: row;
@@ -21,6 +24,7 @@
   margin: 20px;
 }
 
+/* Define tamanho e exibição de cada card na lista */
 #career .cards .card {
   width: 330px;
   height: 150px;
@@ -34,18 +38,21 @@
   justify-content: space-between;
 }
 
+/* Define a exibição do título do card */
 #career .cards .card .card-title{
   font-weight: bold;
   font-size: 1.3rem;
   text-align: left;
 }
 
+/* Define a exibição da descrição do card */
 #career .cards .card .card-description{
   font-size: 1.2rem;
   color: var(--subtext-color);
   text-align: start;
 }
 
+/* Define a exibição do footer do card */
 #career .cards .card .card-footer{
   font-size: 1rem;
   font-weight: bold;
@@ -54,37 +61,40 @@
   align-self: flex-end;
 }
 
+/* Comportamento quando mouse estiver sobre card */
 #career .cards .card:hover{
   background-color: var(--highlight-color);
 }
 
+/* Comportamento da classe card-description quando mouse estiver sobre card */
 #career .cards .card:hover .card-description {
   color: var(--highlight-text-color) !important;
 }
 
+/* Define o tamanho do svg exibido */
 #career .cards .card .svg {
   width: 50px;
   height: 50px;
 }
 
-/* Personalizar a barra de rolagem no WebKit (Chrome, Safari) */
+/* Personaliza a barra de rolagem no WebKit (Chrome, Safari) */
 #career .cards {
   scrollbar-width: thin;
-  /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
+/* Largura da barra de rolagem */
 #career .cards::-webkit-scrollbar {
   width: 10px;
-  /* Largura da barra de rolagem */
 }
 
+/* Cor do polegar da barra de rolagem */
 #career .cards::-webkit-scrollbar-thumb {
   background-color: var(--highlight-color);
-  /* Cor do polegar da barra de rolagem */
 }
 
+
+/* Cor da área do trilho da barra de rolagem */
 #career .cards::-webkit-scrollbar-track {
   background-color: var(--base-color);
-  /* Cor da área de trilha da barra de rolagem */
 }
 

@@ -1,3 +1,4 @@
+/* Configuração do elemento nav */
 nav {
   position: fixed;
   top: 0;
@@ -13,6 +14,7 @@ nav {
   z-index: 1000;
 }
 
+/* Configuração do botão de seleção do tema */
 .theme {
   width: 50px;
   height: 50px;
@@ -20,19 +22,22 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 100%; /* Borda arredondada pro botão de troca de tema */
 }
 
+/* Altera a cor de fundo do botão de tema quando mouse está sobre ele */
 .theme:hover{
   background-color: var(--highlight-color);
 }
 
+/* Define tamanho do svg de troca de tema */
 .theme .svg {
   font-size: 25px;
   width: 32px;
   height: 32px;
 }
 
+/* Define tamanho do icone "hamburguer", quando tela mobile */
 .menu-icon {
   font-size: 25px;
   cursor: pointer;
@@ -40,6 +45,7 @@ nav {
   right: 10px;
 }
 
+/* Define estilo da caixa de exibição dos temas disponíveis */
 .themes{
   font-size: 1.5rem;
   display: none;
@@ -54,6 +60,7 @@ nav {
   user-select: none;
 }
 
+/* Define estilo da caixa de menus quando aberto pelo hamburguer */
 .menu {
   font-size: 1.5rem;
   display: none;
@@ -68,40 +75,46 @@ nav {
   user-select: none;
 }
 
-
+/* Estilo para exibir as opções de menu e temas */
 .menu li,
 .themes li {
   padding: 10px;
   border-radius: 0px;
 }
 
+/* Altera background quando mouse por cima das opções de menu ou tema */
 .menu li:hover,
 .themes li:hover {
   background-color: var(--highlight-color);
 }
 
+/* Remove o decoration do link dos menus e temas e altera a cor do texto */
 .menu a,
 .themes a {
   text-decoration: none;
   color: var(--text-color);
 }
 
+/* Esconde o checkbox de exibição do menu */
 #menu-toggle,
 #themes-toggle {
   visibility: hidden;
 }
 
+/* Texto para indentificar a seção do tema */
 .themes p{
-  margin: 0px 10px;
+  margin: 5px 10px;
   font-size: 1rem;
   font-weight: bold;
 }
 
+/* Define comportamento do menu quando estiver selecionado */
 #menu-toggle:checked+.menu-icon+.menu {
   display: flex;
   cursor: pointer;
 }
 
+/* Define comportamento do tema quando estiver selecionado */
 #themes-toggle:checked+.themes{
   display: flex;
 }
