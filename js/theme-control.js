@@ -1,4 +1,4 @@
-const THEMES = ["light-blue", "light-green", "light-red", "light-yellow", "dark"];
+const THEMES = ["light-1", "light-2", "light-3", "light-4", "dark-1", "dark-2", "dark-3"];
 
 function changeTheme(newTheme) {
     if(THEMES.includes(newTheme)){
@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if(THEMES.includes(currentTheme)){
         changeTheme(currentTheme);
     }else{
-        localStorage.setItem("selectedTheme", "dark");
+        localStorage.setItem("selectedTheme", "dark-1");
     }
 });
