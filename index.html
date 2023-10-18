@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">  
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/career.css">
+  <link rel="stylesheet" href="css/carrousel.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="stylesheet" href="css/themes/dark-theme.css" id="theme-link">
   <link rel="stylesheet"
@@ -484,6 +492,23 @@
       </div>
     </card>
   </section>
-  <section id="contact"></section>
+  <section id="contact">
+      <h2>Entre em Contato</h2>
+      <form action="mailto:email_de_exemplo@exemplo.com" method="post" enctype="text/plain">
+          <div class="input-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+      </form>
+  </section>
 </body>
 </html>

@@ -26,17 +26,20 @@
   /* Largura da barra de rolagem (thin, auto, etc.) */
 }
 
-.carousel .cards::-webkit-scrollbar {
+.carousel .cards::-webkit-scrollbar,
+.carousel .slides::-webkit-scrollbar {
   width: 10px;
   /* Largura da barra de rolagem */
 }
 
-.carousel .cards::-webkit-scrollbar-thumb {
+.carousel .cards::-webkit-scrollbar-thumb,
+.carousel .slides::-webkit-scrollbar-thumb{
   background-color: var(--highlight-color);
   /* Cor do polegar da barra de rolagem */
 }
 
-.carousel .cards::-webkit-scrollbar-track {
+.carousel .cards::-webkit-scrollbar-track,
+.carousel .slides::-webkit-scrollbar-track {
   background-color: var(--base-color);
   /* Cor da área de trilha da barra de rolagem */
 }
