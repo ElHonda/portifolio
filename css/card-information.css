@@ -1,13 +1,13 @@
-/* Estilização para seção */
-#career {
+/* Estilização para componente card-information */
+.card-information {
   background-color: var(--base-color);
   border-style: double;
   border: 1px solid var(--highlight-color);
   margin: 20px 20px;
 }
 
-/* Estiliza a class title da seção */
-#career .title {
+/* Estiliza a class title dentro de card-information */
+.card-information .title {
   font-size: 2rem;
   color: var(--text-color);
   word-wrap: break-word;
@@ -15,7 +15,7 @@
 }
 
 /* Estiliza a div que contém os cards */
-#career .cards {
+.card-information .cards {
   display: flex;
   flex-direction: row;
   color: var(--text-color);
@@ -25,7 +25,7 @@
 }
 
 /* Define tamanho e exibição de cada card na lista */
-#career .cards .card {
+.card-information .cards .card {
   width: 330px;
   height: 150px;
   min-width: 330px;
@@ -39,21 +39,21 @@
 }
 
 /* Define a exibição do título do card */
-#career .cards .card .card-title{
+.card-information .cards .card .card-title{
   font-weight: bold;
   font-size: 1.3rem;
   text-align: left;
 }
 
 /* Define a exibição da descrição do card */
-#career .cards .card .card-description{
+.card-information .cards .card .card-description{
   font-size: 1.2rem;
   color: var(--subtext-color);
   text-align: start;
 }
 
 /* Define a exibição do footer do card */
-#career .cards .card .card-footer{
+.card-information .cards .card .card-footer{
   font-size: 1rem;
   font-weight: bold;
   color: var(--text-color);
@@ -62,39 +62,39 @@
 }
 
 /* Comportamento quando mouse estiver sobre card */
-#career .cards .card:hover{
+.card-information .cards .card:hover{
   background-color: var(--highlight-color);
 }
 
 /* Comportamento da classe card-description quando mouse estiver sobre card */
-#career .cards .card:hover .card-description {
+.card-information .cards .card:hover .card-description {
   color: var(--highlight-text-color) !important;
 }
 
 /* Define o tamanho do svg exibido */
-#career .cards .card .svg {
+.card-information .cards .card .svg {
   width: 50px;
   height: 50px;
 }
 
 /* Personaliza a barra de rolagem no WebKit (Chrome, Safari) */
-#career .cards {
+.card-information .cards {
   scrollbar-width: thin;
 }
 
 /* Largura da barra de rolagem */
-#career .cards::-webkit-scrollbar {
+.card-information .cards::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Cor do polegar da barra de rolagem */
-#career .cards::-webkit-scrollbar-thumb {
+.card-information .cards::-webkit-scrollbar-thumb {
   background-color: var(--highlight-color);
 }
 
 
 /* Cor da área do trilho da barra de rolagem */
-#career .cards::-webkit-scrollbar-track {
+.card-information .cards::-webkit-scrollbar-track {
   background-color: var(--base-color);
 }
 
